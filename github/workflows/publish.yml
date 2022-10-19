@@ -17,3 +17,5 @@ jobs:
           registry: docker.pkg.github.com
           repository: YOURNAME/publish-packages/game
           tag_with_sha: true
+FROM nginx:1.17
+COPY . /usr/share/nginx/html
